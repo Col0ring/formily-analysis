@@ -26,6 +26,11 @@ const getRandomName = () => {
   return `NO_NAME_FIELD_$${env.nonameId++}`
 }
 
+/**
+ * 生成具备有不同功能（String、Number等）的 Schema 组件，主要是做 React 样式渲染与功能联动的
+ * @param options
+ * @returns
+ */
 export function createSchemaField<Components extends SchemaReactComponents>(
   options: ISchemaFieldReactFactoryOptions<Components> = {}
 ) {
